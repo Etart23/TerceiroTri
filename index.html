@@ -1,14 +1,10 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+<link rel="stylesheet" href="style.css">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cards de Resposta</title>
-    <style>
-        .card-answer {
-            display: none; /* Inicialmente oculto */
-        }
-    </style>
 </head>
 <body>
     <div class="card" onclick="showAnswer(this)">
@@ -24,16 +20,6 @@
             <p>Resposta 2</p>
         </div>
     </div>
-
-    <script>
-        function showAnswer(card) {
-            const answer = card.querySelector('.card-answer');
-            if (answer.style.display === 'none') {
-                answer.style.display = 'block';
-            } else {
-                answer.style.display = 'none';
-            }
-        }
-    </script>
+<script src="script.js"></script>
 </body>
 </html>
